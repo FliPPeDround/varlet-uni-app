@@ -11,13 +11,13 @@ index.draft.vue
 *.draft.md
 package-lock.json
 
-packages/varlet-ui/site
-packages/varlet-ui/lib
-packages/varlet-ui/es
-packages/varlet-ui/umd
-packages/varlet-ui/coverage
-packages/varlet-ui/highlight
-packages/varlet-ui/public/icons
+packages/varlet-uni-app/site
+packages/varlet-uni-app/lib
+packages/varlet-uni-app/es
+packages/varlet-uni-app/umd
+packages/varlet-uni-app/coverage
+packages/varlet-uni-app/highlight
+packages/varlet-uni-app/public/icons
 
 packages/varlet-shared/lib
 packages/varlet-use/lib

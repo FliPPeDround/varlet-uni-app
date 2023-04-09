@@ -10,7 +10,6 @@ export default defineUniPages({
     navigationBarBackgroundColor: '#000000',
     navigationBarTextStyle: '@navTxtStyle',
     navigationBarTitleText: 'Vitess-Uni',
-    navigationStyle: 'custom',
   },
   // tabBar: {
   //   backgroundColor: "@tabBgColor",
