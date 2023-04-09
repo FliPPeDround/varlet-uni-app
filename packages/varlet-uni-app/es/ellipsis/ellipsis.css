@@ -1,0 +1,1 @@
+.var-ellipsis { width: 100%; overflow: hidden; vertical-align: bottom;}.var-ellipsis--clamp { display: -webkit-inline-box; -webkit-box-orient: vertical;}.var-ellipsis--line { display: inline-block; white-space: nowrap; text-overflow: ellipsis;}.var-ellipsis--cursor { cursor: pointer;}.var-ellipsis--expand { display: inline-block; white-space: wrap; overflow: visible;}

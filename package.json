@@ -7,42 +7,34 @@
     "bootstrap": "pnpm install && node scripts/bootstrap.mjs",
     "lint": "varlet-cli lint",
     "changelog": "varlet-cli changelog",
-    "release": "node scripts/release.mjs",
-    "release:extension": "pnpm --dir ./packages/varlet-vscode-extension release"
+    "release": "node scripts/release.mjs"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm exec lint-staged --allow-empty --concurrent false",
     "commit-msg": "pnpm exec varlet-cli commit-lint $1 && pnpm exec varlet-cli checklist $1"
   },
   "lint-staged": {
-    "*.{ts,tsx,js,vue,less}": "prettier --write",
     "*.{ts,tsx,js,vue}": "eslint --fix",
     "*.{vue,css,less}": "stylelint --fix"
   },
   "eslintConfig": {
     "root": true,
     "ignorePatterns": [
-      "packages/varlet-cli/lib/**",
-      "packages/varlet-cli/site/**",
-      "packages/varlet-cli/template/**",
-      "packages/varlet-cli/client.js",
-      "packages/varlet-cli/client.d.ts",
-      "packages/varlet-vite-plugins/lib/**",
-      "packages/varlet-vscode-extension/dist/**",
-      "packages/varlet-ui/lib/**",
-      "packages/varlet-ui/es/**",
-      "packages/varlet-ui/umd/**",
-      "packages/varlet-ui/site/**",
-      "packages/varlet-ui/public/**",
-      "packages/varlet-ui/coverage/**",
-      "packages/varlet-ui/highlight/**",
-      "packages/varlet-ui/types/index.d.ts",
-      "packages/varlet-ui/src/*/__tests__/**",
-      "packages/varlet-ui/.varlet/**",
-      "packages/varlet-ui-playground/public/**",
-      "packages/varlet-ui-playground/site/**",
+      "packages/varlet-uni-app/lib/**",
+      "packages/varlet-uni-app/es/**",
+      "packages/varlet-uni-app/umd/**",
+      "packages/varlet-uni-app/site/**",
+      "packages/varlet-uni-app/public/**",
+      "packages/varlet-uni-app/coverage/**",
+      "packages/varlet-uni-app/highlight/**",
+      "packages/varlet-uni-app/types/index.d.ts",
+      "packages/varlet-uni-app/src/*/__tests__/**",
+      "packages/varlet-uni-app/.varlet/**",
+      "packages/varlet-uni-app-playground/public/**",
+      "packages/varlet-uni-app-playground/site/**",
       "packages/varlet-shared/lib/**",
-      "packages/varlet-use/lib/**"
+      "packages/varlet-use/lib/**",
+      "examples/**"
     ],
     "extends": [
       "@varlet"
@@ -53,23 +45,15 @@
       "@varlet/stylelint-config"
     ],
     "ignoreFiles": [
-      "packages/varlet-cli/lib/**",
-      "packages/varlet-cli/site/**",
-      "packages/varlet-cli/template/**",
-      "packages/varlet-cli/client.js",
-      "packages/varlet-cli/client.d.ts",
-      "packages/varlet-vite-plugins/lib/**",
-      "packages/varlet-icons/dist/**",
-      "packages/varlet-ui/lib/**",
-      "packages/varlet-ui/es/**",
-      "packages/varlet-ui/umd/**",
-      "packages/varlet-ui/site/**",
-      "packages/varlet-ui/coverage/**",
-      "packages/varlet-ui/highlight/**",
-      "packages/varlet-ui/public/**",
-      "packages/varlet-ui/.varlet/**",
-      "packages/varlet-ui-playground/public/**",
-      "packages/varlet-ui-playground/site/**"
+      "packages/varlet-uni-app/lib/**",
+      "packages/varlet-uni-app/es/**",
+      "packages/varlet-uni-app/umd/**",
+      "packages/varlet-uni-app/site/**",
+      "packages/varlet-uni-app/coverage/**",
+      "packages/varlet-uni-app/highlight/**",
+      "packages/varlet-uni-app/public/**",
+      "packages/varlet-uni-app/.varlet/**",
+      "examples/**"
     ]
   },
   "devDependencies": {

@@ -1,0 +1,5 @@
+import '../../styles/common.css'
+import '../../form-details/formDetails.css'
+import '../../hover-overlay/hoverOverlay.css'
+import '../slider.css'
+import '../SliderSfc.css'
