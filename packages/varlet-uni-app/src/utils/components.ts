@@ -3,11 +3,9 @@ import {
   createApp,
   h,
   getCurrentInstance,
-  isVNode,
   ref,
   onActivated,
   onDeactivated,
-  Comment,
   Fragment,
   type PropType,
   type ExtractPropTypes,
@@ -90,7 +88,7 @@ export function flatFragment(vNodes: any) {
   const result: VNode[] = []
 
   vNodes.forEach((vNode: any) => {
-    if (vNode.type === Comment) {
+    if (vNode.type === typeof Function) {
       return
     }
 
@@ -118,7 +116,7 @@ export function flatVNodes(subTree: any) {
 
     if (Array.isArray(subTree?.children)) {
       subTree.children.forEach((child: any) => {
-        if (isVNode(child)) {
+        if (child && typeof child.type === 'function') {
           vNodes.push(child)
 
           flat(child)

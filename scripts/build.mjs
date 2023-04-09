@@ -3,7 +3,7 @@ import { createSpinner } from 'nanospinner'
 import { resolve } from 'path'
 
 const CWD = process.cwd()
-const PKG_UI = resolve(CWD, './packages/varlet-ui')
+const PKG_UI = resolve(CWD, './packages/varlet-uni-app')
 const PKG_SHARED = resolve(CWD, './packages/varlet-shared')
 const PKG_USE = resolve(CWD, './packages/varlet-use')
 

@@ -1,7 +1,0 @@
-import '../../styles/common.css'
-import '../../ripple/ripple.css'
-import '../../icon/icon.css'
-import '../../form-details/formDetails.css'
-import '../../hover-overlay/hoverOverlay.css'
-import '../radio.css'
-import '../RadioSfc.css'
