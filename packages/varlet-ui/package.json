@@ -1,0 +1,83 @@
+{
+  "name": "@varlet/ui",
+  "version": "2.9.5",
+  "description": "A material like components library",
+  "main": "lib/varlet.cjs.js",
+  "module": "es/index.mjs",
+  "typings": "types/index.d.ts",
+  "style": "umd/style.css",
+  "unpkg": "umd/varlet.js",
+  "jsdelivr": "umd/varlet.js",
+  "web-types": "highlight/web-types.en-US.json",
+  "keywords": [
+    "Vue",
+    "Material",
+    "UI"
+  ],
+  "files": [
+    "json",
+    "lib",
+    "es",
+    "umd",
+    "highlight",
+    "types"
+  ],
+  "author": "haoziqaq <357229046@qq.com>",
+  "license": "MIT",
+  "homepage": "https://varlet.gitee.io/varlet-ui/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/varletjs/varlet.git"
+  },
+  "bugs": {
+    "url": "https://github.com/varletjs/varlet/issues"
+  },
+  "sideEffects": [
+    "es/**/style/*",
+    "lib/**/style/*",
+    "es/style.mjs",
+    "lib/style.js",
+    "*.css"
+  ],
+  "scripts": {
+    "dev": "varlet-cli dev",
+    "build": "varlet-cli build",
+    "preview": "varlet-cli preview",
+    "compile": "varlet-cli compile",
+    "create": "varlet-cli create",
+    "test": "varlet-cli jest",
+    "test:watch": "varlet-cli jest -w",
+    "test:watchAll": "varlet-cli jest -wa"
+  },
+  "peerDependencies": {
+    "vue": "^3.2.0"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.6",
+    "@varlet/icons": "^2.9.5",
+    "@varlet/shared": "workspace:*",
+    "@varlet/use": "workspace:*",
+    "dayjs": "^1.10.4",
+    "decimal.js": "^10.2.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.15",
+    "@types/lodash-es": "^4.17.6",
+    "@types/node": "^18.7.18",
+    "@varlet/cli": "^2.9.5",
+    "@varlet/touch-emulator": "workspace:*",
+    "@vue/runtime-core": "3.2.25",
+    "@vue/test-utils": "^2.3.2",
+    "clipboard": "^2.0.6",
+    "live-server": "^1.2.1",
+    "lodash-es": "^4.17.21",
+    "postcss-px-to-viewport": "^1.1.1",
+    "typescript": "^4.4.4",
+    "vue": "3.2.47",
+    "vue-router": "4.1.6"
+  },
+  "browserslist": [
+    "Chrome >= 54",
+    "iOS >= 10"
+  ]
+}

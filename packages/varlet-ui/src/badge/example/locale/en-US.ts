@@ -1,0 +1,17 @@
+export default {
+  themeColorBadge: 'Theme Color Badge',
+  dotBadge: 'Dot Badge',
+  customContentBadge: 'Custom Content Badge',
+  maximum: 'Maximum',
+  differentPositioningBadges: 'Different Positioning Badges',
+  upperRight: 'The Upper Right',
+  lowerRight: 'The Lower Right',
+  upperLeft: 'The Upper Left',
+  lowerLeft: 'The Lower Left',
+  hidden: 'Hidden Badge',
+  clickToChangeTheState: 'Click To Change The State',
+  badge: 'Badge',
+  customBadgeColors: 'Custom Badge Colors',
+  customBadgeIcons: 'Custom Badge Icons',
+  customBadgeValue: 'Custom Badge Value',
+}
